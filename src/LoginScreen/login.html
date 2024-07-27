@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="../../assests/images/Reading book 1.png" alt="logo">
+        </div>
+
+        <div class="content-info">
+            <div class="title">
+                <h1>Login</h1>
+                <h3>Don`t have an account? 
+                    <a href="../registerScreen/register.html"> Sign Up </a>
+                </h3>
+            </div>
+            <div class="google">
+                <div>
+                    <button id="signInButton"> Sign In With Google</button>
+                    <button id="signOutButton"> Sign Out</button>
+                </div>
+                <div id="message">
+                    <span id="username"></span>
+                    <span id="userEmail"></span>
+                </div>
+            </div>
+        <form id="form-signin">
+            <div class="form_input">
+                <div class="input_email">
+                    <h4>Email</h4>
+                    <input type="email" id="input_Email" placeholder="Enter Email">
+                    <p id="error"></p>
+                </div>
+                <div class="input_password">
+                    <h4>Password</h4>
+                    <input type="password" id="input_Password" placeholder="Enter Password ">
+                    <p id="error_password"></p>
+                </div>
+            </div>
+            <button type="submit" class="btn" id="submit-btn">Sign in</button>
+        </form>
+        </div>
+    </div>
+
+    <script type="module" src="../LoginScreen/login.js"></script>
+</body>
+</html>

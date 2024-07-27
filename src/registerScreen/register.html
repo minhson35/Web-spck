@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      #loading {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="logo">
+        <img src="../../assests/images/Reading book 1.png" alt="logo" />
+      </div>
+      <div class="content-info">
+        <div class="title">
+          <h1>Create Your Account</h1>
+          <h3>Already have an account?
+          <a href="../LoginScreen/login.html"> Login </a>
+          </h3>
+        </div>
+      <form id="form-signup">
+        <div class="input_form">
+          <div class="input_Name">
+            <h5>First name</h5>
+            <input id="input_firstName" placeholder="Enter First Name" />
+            <h5>Last Name</h5>
+            <input id="input_lastName" placeholder="Enter Last Name " />
+          </div>
+          <div class="input_Email">
+            <h5>Email</h5>
+            <input id="input_Email" placeholder="Enter Email" />
+            <p id="error"></p>
+          </div>
+          <div class="input_Password">
+            <h5>Password</h5>
+            <input type="password" id="input_Password" placeholder="Enter Password " />
+            <p id="error_password"></p>
+            <h5>Confirm Password</h5>
+            <input
+              type="password"
+              id="input_confirmPassword"
+              placeholder="Enter Confirm Password "
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn" id="submit-btn">Sign up</button>
+      </form>
+      <div id="loading">Loading....</div>
+      </div>
+    </div>
+
+    <script type="module" src="../registerScreen/register.js"></script>
+  </body>
+</html>
